@@ -1,0 +1,21 @@
+{
+    "name": "dashboard-template",
+    "version": "1.0.0",
+    "description": "",
+    "author": "",
+    "private": true,
+    "scripts": {
+        "build": "turbo run build --token=\"#TURBOREPO_TOKEN#\" --cache-dir=./turborepo-cache"
+    },
+    "workspaces": [
+        "./front",
+        "./api/core"
+    ],
+    "devDependencies": {
+        "concurrently": "^7.3.0",
+        "turbo": "^1.3.4"
+    },
+    "dependencies": {
+        "semver": "^7.3.7"
+    }
+}
